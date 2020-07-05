@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./scss/tailwind.pcss" />
+
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="preload" id="header" href="./layouts/header.html" />
+    <link id="footer" href="./layouts/footers.html" />
+
+</head>
+
+<body class="container mx-auto bg-gray-100">
+    <div id="header-body"></div>
+    <div class="container">
+        <div class="mt-5 h-auto max-w-sm w-full lg:max-w-full lg:flex">
+            <div class="h-46 lg:h-64 lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+                style="background-image: url('./images/demo.jpg')" title="Yours tully">
+            </div>
+            <div
+                class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                <div class="mb-8">
+
+                    <div class="text-gray-900 font-bold text-xl mb-2">Demo App</div>
+                    <p class="text-gray-700 text-base">this is a very basic app to tell you about basics of quality
+                        apps.
+                        I usually use frameworks for this typeof thing but since its a demo for all it need to be simple
+                        and in languages people are familiar with. I am in no way a designer so this may lack a bit of
+                        design consepts.
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <div class="text-sm">
+                        <h1 class="text-gray-900 leading-none">Adeel Ali</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="footer-body"></div>
+    <script src="./typescript/main.ts"></script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 //gets Header and footer
-const header = document.getElementById("header")!.getAttribute("href")!;
-const footer = document.getElementById("footer")!.getAttribute("href")!;
+const header = "./layouts/header.html";
+const footer = "./layouts/footers.html";
 //sets html headers
 fetch(header)
   .then((response) => {

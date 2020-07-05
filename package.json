@@ -1,16 +1,23 @@
 {
   "scripts": {
-    "dev": "parcel watch src/*.html",
-    "build": "parcel build src/*.html"
+    "preview": "browser-sync start --config bs-config.js",
+    "dev": " parcel watch src/*.html src/layouts/**/*.html",
+    "watch": "concurrently --kill-others \"npm run dev\" \"npm run preview\"",
+    "build": "shx rm -rf ./dist && parcel build src/*.html",
+    "clean": "shx rm -rf ./dist ./.cache"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "concurrently": "^5.2.0",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-purgecss": "^3.0.0",
     "postcss-fontpath": "^1.0.0",
+    "postcss-modules": "^3.2.0",
     "sass": "^1.26.9",
+    "shx": "^0.3.2",
     "typescript": "^3.9.6"
   },
   "dependencies": {
-    "postcss-modules": "^3.2.0",
     "tailwindcss": "^1.4.6"
   }
 }
